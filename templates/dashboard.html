@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bus Occupancy Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    table { border-collapse: collapse; width: 50%; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+    th { background-color: #4CAF50; color: white; }
+  </style>
+</head>
+<body>
+  <h2>Bus Occupancy Dashboard</h2>
+  <table>
+    <tr><th>Time</th><th>Count</th><th>Capacity</th></tr>
+    {% for row in data %}
+    <tr>
+      <td>{{ row.time }}</td>
+      <td>{{ row.count }}</td>
+      <td>{{ row.capacity }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

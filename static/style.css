@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+#occupancy-table {
+  border-collapse: collapse;
+  width: 60%;
+  margin-top: 20px;
+}
+
+#occupancy-table th, #occupancy-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#occupancy-table th {
+  background-color: #2980b9;
+  color: white;
+}
+
+#status {
+  margin-top: 10px;
+  font-weight: bold;
+}
